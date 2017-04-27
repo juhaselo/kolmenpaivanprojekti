@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="main.js"></script>
+    
+<title>Kaveri Kamu</title>
+</head>
+<body>   
+<h1>Kaveri haku</h1>
+<form method="post" action="js/3vastaus.js">
+    
+Suosikki elokuvasi :<br><input type="text" name="elokuva"/>
+<br>    
+Suosikki artistisi :<br><input type="text" name="musikki"/>
+<br>    
+Suosikki TV-sarja :<br><input type="text" name="tvsarja"/> 
+<br>    
+<!--<button type="submit"></button>-->
+<input type="submit" value="Hae Kaveria">
+    
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Haullasi löytyi 4 kaveria : Jaska Jokunen, Natalia, Minna, Jukka";
+</script>
+
+
+</form>
+</body>   
+</html>    
