@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+  <link REL=StyleSheet href="style.css" type="text/css">
+
+  <title>Kaveri Kamu</title>
+</head>
+
+<body>
+  <h1>Kaveri haku</h1>
+  <p>Hae kavereita, joilla on sama musiikki maku.</p>
+
+  <p>Mistä musiikista tykkäät :
+    <input type="text" name="music" value="" id="music"><br>
+
+  </p>
+
+  <input type="submit" value="Hae Kavereita" id="serchFriend">
+
+
+  <h1>Löydetyt kaverit</h1>
+  <select name="users" id="searchResult">
+    <option value="Jaska Jokunen">Jaska Jokunen</option>
+    <option value="Minna Jokinen">Minna Jokinen</option>
+    <option value="Hanna Joki">Hanna Joki</option>
+    <option value="Sanna Koskimaa">Sanna Koskimaa</option>
+    <option value="Juha Elomaa">Juha Elomaa</option>
+    <option value="Sakari Maamäki">Sakari Maamäki</option>
+    <option value="Heikki Kinnuen">Heikki Kinnuen</option>
+    <option value="Satu Silvo">Satu Silvo</option>
+    <option value="Erkki Paavuola">Erkki Paavuola</option>
+    <option value="Mika Häkkinen">Mika Häkkinen</option>
+    <option value="Jenni Kopola">Jenni Kopola</option>
+  </select>
+
+  <h1>Rajaa käyttäjiä</h1>
+
+  <fieldset>
+    <legend>Ikä :</legend>
+    <input type="text" name="age" value="" id="ageResult">
+  </fieldset>
+
+  <fieldset>
+    <legend>Sukupuoli :</legend>
+    <input type="radio" name="gender" value="Mies" id="gendeResultr">Mies<br>
+    <input type="radio" name="gender" value="Nainen" id="genderResult">Nainen<br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Koulutus:</legend>
+    <select name="education" id="educationResult">
+<option value="AMK">AMK</option>
+<option value="Lukio">Lukio</option>
+<option value="Yliopisto">Yliopisto</option> 
+</select>
+  </fieldset>
+
+  <br>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+
+  <input type="text" name="selectedUser" value="Valittu käyttäjä" id="selectedUser">
+  <input type="submit" value=" Ota Yhteyttä" id="sendResponce">
+
+
+</body>
+
+</html>
