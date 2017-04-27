@@ -6,6 +6,7 @@ $(function () {
   // 1) Hae Kaveria funktio 
   $("#serchFriend").click(function () {
     console.log("Hae kaveria toimii");
+    searchFriends()
   });
 
   // 2) Valittu kaveri
