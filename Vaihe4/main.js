@@ -76,6 +76,7 @@ $(function () {
 
   $("#sendResponce").click(function () {
     console.log("Ota yhteyttä toimii");
+   sendMail();
   });
 
 });
@@ -84,3 +85,9 @@ function searchFriends() {
   $('#demo').append('Tähän tulee haun tulokset.<br>');
 
 }
+
+function sendMail() {
+  $('#demo').append('Lähetetty kaveri pyyntö käyttäjälle.<br>');
+
+}
+
