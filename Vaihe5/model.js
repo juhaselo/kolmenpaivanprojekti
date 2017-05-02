@@ -100,4 +100,4 @@ function search(person, gender, music, tv, movies, restaurants) {
    return result;
 }
 
-readDatabase('fbdump.json');
+readDatabase('data.json');
