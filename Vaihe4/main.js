@@ -1,6 +1,6 @@
 $(function () {
 
-   console.log("Toimii !!");
+  console.log("Toimii !!");
 
 
   // 1) Hae Kaveria funktio 
@@ -10,65 +10,55 @@ $(function () {
   });
 
   // 2) Valittu kaveri
-  
+
   $('#searchResult').on('change', onValueChange);
 
   // vaihtoehto: erillinen tapahtumankÃĪsittelijÃĪ
   function onValueChange() {
- 
-  }
-  
 
-
-
- function onValueChange() {
-  console.log("Valittu kaveri toimii valitsit " + this.value);
-    console.log('Valittu teksti: '+$('#serchFriend option:selected').text());
-   appendToFriendDiv('<b>arvo: '+this.value+'</b>'); 
-
-   
   }
 
-    function appendToFriendDiv(html) {
-     	 $('#demo2').append(html+'<br/>');
+
+  function onValueChange() {
+    console.log("Valittu kaveri toimii valitsit " + this.value);
+    //console.log('Valittu teksti: ' + $('#serchFriend option:selected').text());
+    appendToFriendDiv('<b>' + this.value + '</b>');
+
+
+  }
+
+  function appendToFriendDiv(html) {
+    $('#demo2').append(html + '<br/>');
   }
 
   //3) Valittu ikä 
   //age
 
-    $('#ageResult').on('change', onValueChange);
+  $('#ageResult').on('change', onValueChange);
 
- function onValueChange() {
-   console.log("Ikä toimii valitsit " + this.value);
-
-  }
-  //3) Valittu ikä 
-  //age
-
-    $('#ageResult').on('change', onValueChange);
-
- function onValueChange() {
-   console.log("Ikä toimii valitsit " + this.value);
+  function onAgeSelected() {
+    console.log("Ikä toimii valitsit " + this.value);
 
   }
 
   // 4)Valittu kaveri sukupuoli
   //gender
 
-    $('#genderResult').on('change', onValueChange);
+  $('input[name="gender"]').on('change', onValueChange);
 
- function onValueChange() {
-   console.log("Sukupuoli toimii valitsit " + this.value);
+  function onGenderSelected() {
+    console.log("Sukupuoli toimii valitsit " + this.value);
 
   }
+
 
   // 5) Valittu kaveri koulutus
   //education
 
-    $('#educationResult').on('change', onValueChange);
+  $('#educationResult').on('change', onValueChange);
 
- function onValueChange() {
-   console.log("Koulutus toimii valitsit " + this.value);
+  function onEeducationSelected() {
+    console.log("Koulutus toimii valitsit " + this.value);
 
   }
 
@@ -76,7 +66,7 @@ $(function () {
 
   $("#sendResponce").click(function () {
     console.log("Ota yhteyttä toimii");
-   sendMail();
+    sendMail();
   });
 
 });
