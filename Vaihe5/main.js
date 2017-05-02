@@ -1,6 +1,6 @@
 $(function () {
 
-  console.log("Toimii !!");
+  console.log(" Main JS Toimii !!");
 
 
   // 1) Hae Kaveria funktio 

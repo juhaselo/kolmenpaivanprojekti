@@ -1,0 +1,145 @@
+[{
+	"name": "Natalia Sulkama",
+	"gender": "female",
+	"music": ["AcousticTrench", "Foo Fighters", "Red Hot Chili Peppers", "Muse"],
+	"tv": ["Game of Thrones", "The Fresh Prince of Bel-Air", "The Walking Dead", "MythBusters", "South Park", "SpongeBob SquarePants", "Futurama"],
+	"movies": ["Mad Max", "Mars Attacks", "Last Action Hero", "Avengers", "Edward Scissorhands", "Back to the Future", "Beetlejuice", "Tron", "X-Men", "The Terminator", "The Iron Giant", "Indiana Jones", "Rambo", "The Hobbit", "Monty Python's The Meaning of Life", "The Blues Brothers", "Transformers", "Monty Python and the Holy Grail", "Monty Python's Life of Brian", "Iron Man", "Ghostbusters", "Lord of the Rings"]
+}, {
+	"name": "Pasi Jylhä-Ollila",
+	"gender": "male",
+	"music": ["Phil Collins", "Fancy", "Pet Shop Boys", "Bad Boys Blue"],
+	"tv": ["Star Trek the Next Generation", "Huutokauppakeisari", "Lentoturmatutkinta"],
+	"movies": ["Star Wars", "Back to The Future"],
+	"restaurants": ["Bar Blue Jay", "Bar Cafe Luna", "Bar Britannia"]
+}, {
+	"name": "Miro Heinonen",
+	"gender": "male",
+	"music": ["The Kinks", "Fela Kuti", "Elvis", "Radiohead"],
+	"tv": ["Wallander", "House of Cards", "Dallas"],
+	"movies": ["Fireworks", "Dog Day Afternoon"],
+	"restaurants": ["Cafe Base", "Duffo", "Gil Abbiano"]
+}, {
+	"name": "Jaska Jokunen",
+	"gender": "male",
+	"music": ["The Cardigans", "Anssi Kela", "Haloo Helsinki", "Jenni Vertiainen"],
+	"tv": ["Uusi Päivä", "Sorjonen", "Batman"],
+	"movies": ["Starwars", "Matrix"],
+	"restaurants": ["Hesburger", "Rosso", "Koti Pizza"]
+}, {
+	"name": "Ville Aho",
+	"gender": "male",
+	"music": ["Eveliina", "JVG", "Eminem", "Drake", "Ellie Goulding", "Kanye West", "Cheek"],
+	"tv": ["Tastemade", "O.C", "Frendit", "Gossip Girl"],
+	"movies": ["Inception", "Fast and Furious", "Bad Boys", "Dark Knight", "Pirates of te Carribean"],
+	"restaurants": ["Amarillo Helsinki", "Rosso", "Santa Fe", "Casino Royale"]
+}, {
+	"name": "Henriikka Mäkelä",
+	"gender": "female",
+	"music": ["Passionworks", "IAMX", "the GazettE", "Nirvana", "Harriet ja Käpypojat", "Negative", "Mindless Self Indulgence", "Versailles", "Marilyn Manson", "Girugamesh", "Evanescence", "D'espairsray", "Disturbed"],
+	"movies": ["Hannibal", "Saw", "Titanic", "American Pie"],
+	"restaurants": ["Friends & Brgrs", "Amarillo", "Espresso House"]
+}, {
+	"name": "NinaRaw",
+	"gender": "female",
+	"music": ["REOL", "96neko", "girugamesh", "AmaLee", "un:c"],
+	"tv": ["ACCA: 13-ku Kansatsu-ka", "Youjo Senki", "Akatsuki no Yona", "JoJo no Kimyou na Bouken", "Kemono no Souja Erin"],
+	"movies": ["Kimi no Na wa", "Akira", "Final Fantasy VII: Advent Children", "Hotaru no Haka", "Tamako Love Story"],
+	"restaurants": ["Japanilainen ravintola SUMO", "Why join the navy when you can be a pirate"]
+}, {
+	"name": "Petra Lignell",
+	"gender": "female",
+	"music": ["Owl City", "TheFatRat", "In Flames", "Adrian von Ziegler", "Anssi Kela", "Fort Minor", "Amaranthe", "Radio Nova", "Serj Tankian", "Tom Day", "Robert Miles", "Happoradio", "Bastille", "Lindsey Stirling", "Bomfunk MC’s", "Example", "Skrillex", "Apulanta", "Dead by April", "Finnish Hockey Mafia", "Limp Bizkit", "Pendulum", "Eminem", "Thirty Seconds to Mars", "Avenged Sevenfold", "Disturbed", "Nobuo Uematsu", "Linkin Park", "Poets of the Fall"],
+	"tv": ["Limitless on CBS", "Marvel's Daredevil", "RWBY", "Orphan Black", "Game of Thrones", "House", "The Simpsons", "Eurovision Song Contest", "FRIENDS (TV Show)", "NCIS", "NCIS: Los Angeles", "Kyborgi 009", "The Mentalist", "SpongeBob SquarePants", "Chuck (televisiosarja)", "Fullmetal Alchemist", "Muumilaakson Tarinoita", "South Park", "FlashForward"],
+	"movies": ["Kissojen valtakunta", "Henkien kätkemä", "Fantastic Beasts", "The Jungle Book", "Deadpool Movie", "Chappie Movie", "The Wind Rises", "How to Train Your Dragon", "Shaolin", "Sydämen kuiskaus", "Pacific Rim", "Paperman", "Life of Pi Movie", "Pirates of the Caribbean", "Rise of the Guardians", "Iron Sky", "Legend of the Guardians: The Owls of Ga'Hoole", "Tron", "Rare Exports", "Final Fantasy Movies", "Hopeanuoli", "Hachiko", "Last Order: Final Fantasy VII", "Final Fantasy VII: Advent Children", "Avatar"],
+	"restaurants": ["Vapiano Helsinki"]
+}, {
+	"name": "Ville Alamäki",
+	"gender": "male",
+	"music": ["deadmouse", "tiesto", "black sabbath"],
+	"tv": ["friends", "salatut elämät", "the simpsons"],
+	"movies": ["star wars IV", "superman", "batman"],
+	"restaurants": ["feel vegas", "kotipizza", "base"]
+}, {
+	"name": "Aleksi Ruokola",
+	"gender": "male",
+	"music": ["Arcade Fire", "The Shins", "Beach House", "Radiohead", "The National"],
+	"tv": ["The Wire", "Game of Thrones"],
+	"movies": ["Alien"],
+	"restaurants": ["Sodexo"]
+}, {
+	"name": "Nicholas Leva",
+	"gender": "male",
+	"music": ["Eldis", "Stepa", "Janne Orden", "JVG"],
+	"tv": ["Kimmo"],
+	"movies": ["Matti", "The Simpsons Movie", "Now you see me 2"],
+	"restaurants": ["Amarillo", "Fazer", "Burger King"]
+}, {
+	"name": "Hannes Tikkanen",
+	"gender": "male",
+	"music": ["RadioRock"],
+	"tv": ["Black Sails", "The Wire", "Breaking Bad", "Game of Thrones", "Better call Saul", "The Walking Dead"],
+	"movies": ["Shrek"],
+	"restaurants": ["Abone", "Sodexo"]
+}, {
+	"name": "Anniina Koivu",
+	"gender": "female",
+	"music": ["Hassisen Kone", "Sielun Veljet", "Tegan and Sara", "Don Huonot", "Aknestik", "Maija Vilkkumaa"],
+	"tv": ["Breaking Bad", "Star Trek: The Next Generation", "Star Trek: Voyager", "Vikings", "Orange is the New Black", "Stranger Things", "The OA", "Rick and Morty", "Doctor Who", "Sherlock", "The 100", "4400", "Skins (UK)", "NCIS", "Criminal Minds", "Friends", "Life"],
+	"movies": ["iBoy", "The Butterfly Effect", "The Shawshank Redemption", "Inception", "The Fantastic Beasts and Where to Find Them", "Eternal Sunshine of the Spotless Mind", "Perfume: The Story of a Murderer", "Edward Scissorhands", "The Mask", "Ace Ventura: When Nature Calls", "Interstellar"],
+	"restaurants": ["Medicin Man", "Ravintola Hook", "Naughty BRGR", "Royal Mekong"]
+}, {
+	"name": "Jacky Law",
+	"gender": "male",
+	"music": ["BIGBANG", "BEAST", "BTS"],
+	"tv": ["Heroes"],
+	"movies": ["Inception", "Harrypotter", "Marvel"],
+	"restaurants": ["Vapiano", "Fuku", "Morrison's"]
+}, {
+	"name": "Suvi Napola",
+	"gender": "female",
+	"music": ["Paperi T", "deadmau5", "Lana Del Rey", "Adele"],
+	"tv": ["Stranger Things", "American Horror Story", "Orange Is the New Black", "Breaking Bad"],
+	"movies": ["Leijonakuningas", "Jurassic Park"],
+	"restaurants": ["Capri Pizzeria", "Impivaara Grill", "Kotipizza"]
+}, {
+	"name": "Jasu Setälä",
+	"gender": "Mies",
+	"Musiikki": ["Edi Brokk", "Progressiivinen rock"],
+	"Elokuvia": ["Wastelander Panda"],
+	"Pelit": ["Blood Bowl"]
+}, {
+	"name": "Kotilo",
+	"gender": "Female",
+	"music": ["Gojira", "DOOMRIDERS", "Opeth", "SMOOD", "Dept.", "Pluton & Skyer", "fabriclondon", "Night Slugs", "Murlo", "Planet Mu (OFFICIAL)", "Riko Dan", "Last Japan", "MUMDANCE", "Boxed", "Resound", "Tulitauko Sound", "HuuHaa", "Quema & Venæ", "TRAX CASINO", "Mindscape", "Calibre Dnb", "Hydro", "Swindle", "Jungle Syndicate", "DJ Shadow", "SP:MC", "Lurka", "Grenier", "Metalheadz", "Loefah", "Dusky", "Midland", "ESKMO", "TRUTH", "DJ MADD", "Hyperdub Records", "SWAMP81", "Kahn", "Icicle", "DEEP MEDi", "Mala", "Asa", "Kromestar", "Alex Banks Music", "Islndr", "SUPER POWER", "KUPLA", "Flako", "Hidden Orchestra", "Jon Hopkins", "East End Dubs", "Mono.Mental", "Dub Temple Records", "olpek", "Exit Records UK", "Skye and Ross Morcheeba", "Mortem DNB", "ARP▲101", "Goth-Trad Music official", "Pulsaar", "Black Sun Empire", "Rinse FM", "Fela Kuti", "Optiv", "MAKOTO", "Owiny Sigoma Band", "DJ Youngsta", "Zed Bias AKA Maddslinky", "Four Tet", "J:KENZO", "Djrum", "Ruckspin", "Shpongle (Simon Posford)", "RJD2", "Bonobo", "Panu Posti - Dullatron / Ekhozone / Mean Seed", "Grégory Privat", "Gramatik", "Detroit Swindle", "Aedicule", "Akkord", "Om Unit", "Seba", "DBridge", "Enei", "Blu Mar Ten", "FaltyDL", "Slugabed", "Pinch", "SYNKRO", "Gantz", "Phaeleh", "Commodo*", "Thelem", "Author (official)", "Submotion Orchestra", "Criba", "Mean Seed Records", "Outlook Festival", "Reettastiina", "Ivah Sound", "SubzUp", "Meraki", "Doomsday"],
+	"tv": "Monty Python's Flying Circus",
+	"movies": "Enter the Void",
+	"restaurants": ["Kolo", "Sen Chay", "Jänö - vegaaninen lippakioski", "ONDA"]
+}, {
+	"name": "Matti Meikäläinen",
+	"gender": "male",
+	"music": ["Prince", "Sanni", "PMMP", "Kiss"],
+	"tv": ["Gilmore Girls", "Blacklist", "Orange is the new black"],
+	"movies": ["Amelie", "Iron Man"],
+	"restaurants": ["Vapiano", "Manhattan Steakhouse", "McDonalds"]
+}, {
+	"name": "Tomi Pohja",
+	"gender": "male",
+	"music": ["August Burns Red", "Tesseract", "Pink Floyd", "Forevermore"],
+	"tv": ["The Office", "The Big Bang Theory", "Band of Brothers"],
+	"movies": ["Interstellar", "Lord of The Rings, The Shawshank Redemption"],
+	"restaurants": ["Sodexo"]
+}, {
+	"name": "Tiia",
+	"gender": "Female",
+	"music": ["Lisa Mitchell, Leevi and the Leavings, Michael Jackson"],
+	"tv": ["Rakas, sinusta on tullut pullukka, MTV Uutiset, Karpolla on asiaa, Digimon"],
+	"movies": ["Mr. Nobody, Matrix, Star Wars, Harry Potter"],
+	"restaurants": ["Fuku, Hesburger, Itis Kebab, Morrison's"]
+}, {
+	"name": "Santtu Taskinen",
+	"gender": "Male",
+	"music": ["Ayreon", "Blind Guardian", "Amorphis", "Orden Ogan", "Freedom Call"],
+	"tv": ["Bumtsibum", "Mythbusters"],
+	"movies": ["Legend of the Guardians: The Owls of Ga'hoole", "Captain America: The Winter Soldier"],
+	"restaurants": ["Interpizza"]
+}]
