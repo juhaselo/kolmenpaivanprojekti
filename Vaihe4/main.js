@@ -13,13 +13,7 @@ $(function () {
 
   $('#searchResult').on('change', onValueChange);
 
-  // vaihtoehto: erillinen tapahtumankÃĪsittelijÃĪ
-  function onValueChange() {
-
-  }
-
-
-  function onValueChange() {
+   function onValueChange() {
     console.log("Valittu kaveri toimii valitsit " + this.value);
     //console.log('Valittu teksti: ' + $('#serchFriend option:selected').text());
     appendToFriendDiv('<b>' + this.value + '</b>');
@@ -34,7 +28,7 @@ $(function () {
   //3) Valittu ikä 
   //age
 
-  $('#ageResult').on('change', onValueChange);
+  $('#ageResult').on('change', onAgeSelected);
 
   function onAgeSelected() {
     console.log("Ikä toimii valitsit " + this.value);
@@ -44,7 +38,7 @@ $(function () {
   // 4)Valittu kaveri sukupuoli
   //gender
 
-  $('input[name="gender"]').on('change', onValueChange);
+  $('input[name="gender"]').on('change', onGenderSelected);
 
   function onGenderSelected() {
     console.log("Sukupuoli toimii valitsit " + this.value);
@@ -55,7 +49,7 @@ $(function () {
   // 5) Valittu kaveri koulutus
   //education
 
-  $('#educationResult').on('change', onValueChange);
+  $('#educationResult').on('change', onEeducationSelected);
 
   function onEeducationSelected() {
     console.log("Koulutus toimii valitsit " + this.value);
@@ -72,7 +66,7 @@ $(function () {
 });
 
 function searchFriends() {
-  $('#demo').append('Tähän tulee haun tulokset.<br>');
+  $('#demo').append('Valitsit kaverin<br>');
 
 }
 
