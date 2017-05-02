@@ -17,9 +17,9 @@ function readDatabase(databaseFile) {
         //print(search('', 'male', '', '', '', 'Amarillo'));
         //print(search('', '', '', '', '', 'Sodexo'));
         
-        //print(search('', '', 'Haloo Helsinki', '', '', ''));
+        print(search('', '', 'Haloo Helsinki', '', '', ''));
         //print(search('', '', '', 'Uusi Päivä', '', ''));
-        print(search('', '', '', '', 'Matrix', ''));
+        //print(search('', '', '', '', 'Matrix', ''));
     
     });
 }
