@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon.ico">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="main.js"></script>
   <script src="model.js"></script>
@@ -12,6 +13,9 @@
 </head>
 
 <body>
+    <table background="kuva.jpg" border="2" width="908" heigtht="560">
+      <tr><td>
+
   <h1>Kaveri Kamu</h1>
   <img src="friend.jpg" alt="Kaveri Kamu">
   <p>
@@ -47,9 +51,15 @@
     <option value="Jenni Kopola">Jenni Kopola</option>
     -->
   </select>
-  
+
  <p id="demo"></p>
   <p id="demo2"></p>
+
+
+ <!-- Ota yhteyttä käyttäjään -->
+
+  <input type="text" name="selectedUser" value="" id="selectedUser">
+  <input type="submit" value=" Ota Yhteyttä" id="sendResponce">
 
 <!-- Rajaa käyttäjiä -->
 
@@ -76,10 +86,12 @@
   </fieldset>
 
   <br>
- 
 
-  <input type="text" name="selectedUser" value="" id="selectedUser">
-  <input type="submit" value=" Ota Yhteyttä" id="sendResponce">
+
+ 
+  </td></tr> 
+  </table>
+
 
 
 </body>

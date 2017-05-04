@@ -21,7 +21,7 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
   function onValueChange() {
     console.log("Valittu kaveri toimii valitsit " + this.value);
     //console.log('Valittu teksti: ' + $('#serchFriend option:selected').text());
-    appendToFriendDiv('<b>' + this.value + '</b>');
+    //appendToFriendDiv('<b>' + this.value + '</b>');
    //$('#selectedUser').append(this.value);
   $('#selectedUser').val(this.value)
 
@@ -97,7 +97,7 @@ function findPersonByMusic(dataset, musicQuery) {
           musicQuery = musicQuery.toLowerCase();
           if(musicStr.includes(musicQuery)) {
 
-              $('#demo2').append(entry.name + '<br/>');
+              //$('#demo2').append(entry.name + '<br/>');
               // tähän koodi, joka 
               // 1) valitsee select-elementin
               // 2) ja lisää sinne option-elementtejä, yksi jokaista löydettyä käyttäjää kohti
@@ -124,12 +124,12 @@ function findPersonByMusic(dataset, musicQuery) {
 });
 
 function searchFriends() {
-  $('#demo').append('Haku tehty. Valitse Löydetyt Kaverit listasta haluamasi kaveri.<br>');
+  $('#demo').append('<b>Haku tehty. Valitse Löydetyt Kaverit listasta haluamasi kaveri.</b><br>');
 
 }
 
 function sendMail() {
-  $('#demo').append('Lähetetty kaveri pyyntö käyttäjälle.<br>');
+  $('#demo').append('<b>Lähetetty kaveri pyyntö käyttäjälle.</b><br>');
 
 }
 
