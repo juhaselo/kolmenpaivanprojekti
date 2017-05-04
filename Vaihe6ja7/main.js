@@ -9,8 +9,8 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
   // 1) Hae Kaveria funktio 
   $("#serchFriend").click(function () {
     console.log("Hae kaveria toimii");
-    searchFriends()
-    processJson(data)
+    getDatabase();
+    //processJson(database)
   });
 
   // 2) Valittu kaveri
@@ -21,6 +21,7 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
     console.log("Valittu kaveri toimii valitsit " + this.value);
     //console.log('Valittu teksti: ' + $('#serchFriend option:selected').text());
     appendToFriendDiv('<b>' + this.value + '</b>');
+
 
 
   }
@@ -68,23 +69,37 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
     sendMail();
   });
 
-function readDatabase() {
-    $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8fca519fc9da878551841/raw/c3158bf2bf9133ebff31584f9878df90d7e23f15/data.json', function (data) {
-        processJson(data);
+function getDatabase() {
+    $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8fca519fc9da878551841/raw/c3158bf2bf9133ebff31584f9878df90d7e23f15/data.json', function (database) {
+        //console.log(database);
+        var musicValue = $('#music').val();
+        console.log(musicValue);
+        findPersonByMusic(database, musicValue);
     });
 }
 
-function processJson(data) {
-    for(var entry of data) {
+function findPersonByMusic(dataset, musicQuery) {
+    console.log('findPersonByMusic');
+    for(var entry of dataset) {
          console.log('-----------');
          console.log('name: '+entry.name);
          console.log('gender: '+entry.gender);
          console.log('age: '+entry.age)
          console.log('education: '+entry.education)
-          $('#demo2').append(entry.name + '<br/>');
+          
 
          if(entry.music) {
           console.log('music: '+entry.music.join(', '));
+          var musicStr = entry.music.join(', ').toLowerCase();
+          musicQuery = musicQuery.toLowerCase();
+          if(musicStr.includes(musicQuery)) {
+
+              $('#demo2').append(entry.name + '<br/>');
+              // tähän koodi, joka 
+              // 1) valitsee select-elementin
+              // 2) ja lisää sinne option-elementtejä, yksi jokaista löydettyä käyttäjää kohti
+              $select #searchResult
+          }
          } else {
           console.log('music: not defined');
          }
@@ -95,7 +110,7 @@ function processJson(data) {
     }
 }
 
-readDatabase();
+//searchFriend();
 
 function print(result) {
     for(var e of result) {
@@ -177,7 +192,7 @@ function search(person, gender, music, tv, movies, restaurants) {
    return result;
 }
 
-print(search('', '', 'Haloo Helsinki', '', '', ''));
+//print(search('', '', 'Haloo Helsinki', '', '', ''));
 
 
 
