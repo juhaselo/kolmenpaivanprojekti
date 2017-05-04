@@ -2,8 +2,8 @@ $(function () {
 
   console.log(" Main JS Toimii !!");
 
-var database;
-database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8fca519fc9da878551841/raw/c3158bf2bf9133ebff31584f9878df90d7e23f15/data.json');
+  var database;
+  database = $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8fca519fc9da878551841/raw/c3158bf2bf9133ebff31584f9878df90d7e23f15/data.json');
 
 
   // 1) Hae Kaveria funktio 
@@ -11,7 +11,6 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
     console.log("Hae kaveria toimii");
     searchFriends();
     getDatabase();
-    //processJson(database)
   });
 
   // 2) Valittu kaveri
@@ -20,22 +19,20 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
 
   function onValueChange() {
     console.log("Valittu kaveri toimii valitsit " + this.value);
-    //console.log('Valittu teksti: ' + $('#serchFriend option:selected').text());
-    //appendToFriendDiv('<b>' + this.value + '</b>');
-   //$('#selectedUser').append(this.value);
-  $('#selectedUser').val(this.value)
+
+    $('#selectedUser').val(this.value)
 
   }
 
   function appendToFriendDiv(html) {
     $('#demo2').append(html + '<br/>');
-    //$('#selectedUser').append(html);
-   
-    
+
+
+
   }
 
   //3) Valittu ikä 
-  //age
+
 
   $('#ageResult').on('change', onAgeSelected);
 
@@ -45,7 +42,7 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
   }
 
   // 4)Valittu kaveri sukupuoli
-  //gender
+
 
   $('input[name="gender"]').on('change', onGenderSelected);
 
@@ -54,9 +51,8 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
 
   }
 
-
   // 5) Valittu kaveri koulutus
-  //education
+
 
   $('#educationResult').on('change', onEeducationSelected);
 
@@ -72,53 +68,53 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
     sendMail();
   });
 
-function getDatabase() {
+  function getDatabase() {
     $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8fca519fc9da878551841/raw/c3158bf2bf9133ebff31584f9878df90d7e23f15/data.json', function (database) {
-        //console.log(database);
-        var musicValue = $('#music').val();
-        console.log(musicValue);
-        findPersonByMusic(database, musicValue);
+      //console.log(database);
+      var musicValue = $('#music').val();
+      console.log(musicValue);
+      findPersonByMusic(database, musicValue);
     });
-}
+  }
 
-function findPersonByMusic(dataset, musicQuery) {
+  function findPersonByMusic(dataset, musicQuery) {
     console.log('findPersonByMusic');
-    for(var entry of dataset) {
-         console.log('-----------');
-         console.log('name: '+entry.name);
-         console.log('gender: '+entry.gender);
-         console.log('age: '+entry.age)
-         console.log('education: '+entry.education)
-          
-
-         if(entry.music) {
-          console.log('music: '+entry.music.join(', '));
-          var musicStr = entry.music.join(', ').toLowerCase();
-          musicQuery = musicQuery.toLowerCase();
-          if(musicStr.includes(musicQuery)) {
-
-              //$('#demo2').append(entry.name + '<br/>');
-              // tähän koodi, joka 
-              // 1) valitsee select-elementin
-              // 2) ja lisää sinne option-elementtejä, yksi jokaista löydettyä käyttäjää kohti
-               
-//for (var entry of entry) {
-      $('#searchResult').append('<option value="'+entry.name +'">'+entry.name +'</option>');
-  // }
+    for (var entry of dataset) {
+      console.log('-----------');
+      console.log('name: ' + entry.name);
+      console.log('gender: ' + entry.gender);
+      console.log('age: ' + entry.age)
+      console.log('education: ' + entry.education)
 
 
+      if (entry.music) {
+        console.log('music: ' + entry.music.join(', '));
+        var musicStr = entry.music.join(', ').toLowerCase();
+        musicQuery = musicQuery.toLowerCase();
+        if (musicStr.includes(musicQuery)) {
 
-              
-          }
-         } else {
-          console.log('music: not defined');
-         }
-         if(entry.restaurants) {
-            //console.log('restaurants: '+entry.restaurants.join(' and '));
-         }
-        
+          //$('#demo2').append(entry.name + '<br/>');
+          // tähän koodi, joka 
+          // 1) valitsee select-elementin
+          // 2) ja lisää sinne option-elementtejä, yksi jokaista löydettyä käyttäjää kohti
+
+          //for (var entry of entry) {
+          $('#searchResult').append('<option value="' + entry.name + '">' + entry.name + '</option>');
+          // }
+
+
+
+
+        }
+      } else {
+        console.log('music: not defined');
+      }
+      if (entry.restaurants) {
+        //console.log('restaurants: '+entry.restaurants.join(' and '));
+      }
+
     }
-}
+  }
 
 
 });
