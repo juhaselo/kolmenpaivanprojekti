@@ -9,6 +9,7 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
   // 1) Hae Kaveria funktio 
   $("#serchFriend").click(function () {
     console.log("Hae kaveria toimii");
+    searchFriends();
     getDatabase();
     //processJson(database)
   });
@@ -21,14 +22,16 @@ database =  $.getJSON('https://gist.githubusercontent.com/Vombatti/8ca98275b2a8f
     console.log("Valittu kaveri toimii valitsit " + this.value);
     //console.log('Valittu teksti: ' + $('#serchFriend option:selected').text());
     appendToFriendDiv('<b>' + this.value + '</b>');
-
-
+   //$('#selectedUser').append(this.value);
+  $('#selectedUser').val(this.value)
 
   }
 
   function appendToFriendDiv(html) {
     $('#demo2').append(html + '<br/>');
-    $('#selectedUser').append(html);
+    //$('#selectedUser').append(html);
+   
+    
   }
 
   //3) Valittu ikä 
@@ -98,7 +101,14 @@ function findPersonByMusic(dataset, musicQuery) {
               // tähän koodi, joka 
               // 1) valitsee select-elementin
               // 2) ja lisää sinne option-elementtejä, yksi jokaista löydettyä käyttäjää kohti
-              $select #searchResult
+               
+//for (var entry of entry) {
+      $('#searchResult').append('<option value="'+entry.name +'">'+entry.name +'</option>');
+  // }
+
+
+
+              
           }
          } else {
           console.log('music: not defined');
@@ -109,94 +119,6 @@ function findPersonByMusic(dataset, musicQuery) {
         
     }
 }
-
-//searchFriend();
-
-function print(result) {
-    for(var e of result) {
-        //console.log(e.name+': '+e.music+', '+e.tv);
-        console.log(e.name);
-        console.log('------');
-    }
-
-}
-
-// exact match
-function fieldMatch(entry, fieldName, value) {
-    if(value) {
-     value = value.toLowerCase();
-     if(entry[fieldName].toLowerCase() != value) { // ! -> negation
-        return false;
-     }
-   }
-   return true; // if value is not set or matches, return true
-}
-
-// contains substring
-function fieldIncludes(entry, fieldName, value) {
-   if(value) {
-     value = value.toLowerCase();
-     if(!entry[fieldName].toLowerCase().includes(value)) {
-        return false; // match, return true
-     }
-   }
-   return true; // if value is not set or matches, return true
-}
-// music, restaurants, etc
-function fieldArrayContains(entry, fieldName, value) {
-   var match = false;
-   if(value) {
-     if(!entry[fieldName]) { // if field undefined, return false
-       return false;
-     }
-     value = value.toLowerCase();
-     for(var dbValue of entry[fieldName]) {
-       if(dbValue.toLowerCase().includes(value)) {
-         match = true;
-       }
-     }
-     return match;
-   }
-   return true; // if value is not defined, return true
-}
-
-function includeEntry(entry, person, gender, music, tv, movies, restaurants) {
-   if(!fieldIncludes(entry, 'name', person)) {
-     return false;
-   }
-   if(!fieldMatch(entry, 'gender', gender)) {
-     return false;
-   }
-   if(!fieldArrayContains(entry, 'music', music)) {
-     return false;
-   }
-   if(!fieldArrayContains(entry, 'tv', tv)) {
-     return false;
-   }
-   if(!fieldArrayContains(entry, 'movies', movies)) {
-     return false;
-   }
-   if(!fieldArrayContains(entry, 'restaurants', restaurants)) {
-     return false;
-   }
-   return true;
-}
-function search(person, gender, music, tv, movies, restaurants) {
-   console.log('search');
-   var result = [];
-   for(var entry of database) {
-     if(includeEntry(entry, person, gender, music, tv, movies, restaurants)) {
-        result.push(entry);
-     }
-   }
-   return result;
-}
-
-//print(search('', '', 'Haloo Helsinki', '', '', ''));
-
-
-
-
 
 
 });
